@@ -1,0 +1,19 @@
+[package]
+name = "p2p-fs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.23", features = ["derive"] }
+futures = "0.3.31"
+futures-timer = "3.0.3"
+libp2p = { version = "0.54.1", features = ["full"] }
+tokio = { version = "1.42.0", features = ["full"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter", "chrono", "serde", "parking_lot", "json"] }
+
+[[bin]]
+name = "server"
+
+[[bin]]
+name = "client"
